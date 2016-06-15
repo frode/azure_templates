@@ -94,11 +94,12 @@
     },
     "vmSizeClientNodes": {
       "type": "string",
-      "defaultValue": "Standard_D2_v2",
+      "defaultValue": "Standard_A1",
       "allowedValues": [
         "Standard_D2_v2",
         "Standard_D3_v2",
         "Standard_D4_v2",
+        "Standard_A1",
         "Standard_A2",
         "Standard_A3",
         "Standard_A4",
@@ -116,11 +117,12 @@
     },
     "vmSizeMasterNodes": {
       "type": "string",
-      "defaultValue": "Standard_D2_v2",
+      "defaultValue": "Standard_A1",
       "allowedValues": [
         "Standard_D2_v2",
         "Standard_D3_v2",
         "Standard_D4_v2",
+        "Standard_A1",
         "Standard_A2",
         "Standard_A3",
         "Standard_A4",
@@ -138,12 +140,13 @@
     },
     "vmSizeDataNodes": {
       "type": "string",
-      "defaultValue": "Standard_D2_v2",
+      "defaultValue": "Standard_A1",
       "allowedValues": [
         "Standard_D2_v2",
         "Standard_D3_v2",
         "Standard_D4_v2",
         "Standard_D12_v2",
+        "Standard_A1",
         "Standard_A2",
         "Standard_A3",
         "Standard_A4",
@@ -222,11 +225,12 @@
     },
     "vmSizeMarvelNodes": {
       "type": "string",
-      "defaultValue": "Standard_D2_v2",
+      "defaultValue": "Standard_A1",
       "allowedValues": [
         "Standard_D2_v2",
         "Standard_D3_v2",
         "Standard_D4_v2",
+        "Standard_A1",
         "Standard_A2",
         "Standard_A3",
         "Standard_A4"
@@ -615,6 +619,11 @@
         "dataDisks":16,
         "nodesPerStorageAccount":2,
         "storageAccountType":"Premium_LRS"
+      },
+      "Standard_A1": {
+        "dataDisks":2,
+        "nodesPerStorageAccount":4,
+        "storageAccountType":"Standard_LRS"
       },
       "Standard_A2": {
         "dataDisks":4,
